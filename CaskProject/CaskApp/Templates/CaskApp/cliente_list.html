@@ -1,0 +1,14 @@
+{% extends 'CaskApp/base.html' %} 
+
+{% block contenido %}
+
+	{% for cliente in clientes %}
+		<ul>
+  			<li>
+				{{cliente.nombre}}
+				{{cliente.apellido}}
+			</li>
+		</ul>
+	{% endfor %} 
+
+	{% endblock contenido %}

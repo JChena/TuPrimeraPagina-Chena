@@ -21,4 +21,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('producto/list', views.producto_list, name='producto_list'),
     path('producto/form', views.producto_form, name='producto_form'),
+    path('cliente/list', views.cliente_list, name='cliente_list'),
+    path('cliente/form', views.cliente_form, name='cliente_form'),
+    path('cata/list', views.cata_list, name='cata_list'),
+    path('cata/form', views.cata_form, name='cata_form'),
 ]
