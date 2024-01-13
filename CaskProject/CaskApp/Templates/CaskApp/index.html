@@ -1,0 +1,9 @@
+{% extends 'CaskApp/base.html' %} 
+
+{% block contenido %}
+    <h1>Bienvenidos</h1>
+
+    <button><a href="{% url 'producto_list' %}">Ver Productos</a></button>
+    <button><a href="{% url 'producto_form' %}">Crear Producto</a></button>
+    
+{% endblock contenido %}
