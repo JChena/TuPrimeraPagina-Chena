@@ -1,4 +1,4 @@
-# Preentrrega 3 - Comisión 56065 - 'TuPrimeraPagina+Chena'
+# Pre-entrega 3 - Comisión 56065 - 'TuPrimeraPagina+Chena'
 
 # Datos del alumno
 
