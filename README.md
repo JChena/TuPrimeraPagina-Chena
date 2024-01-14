@@ -16,5 +16,6 @@
 
     - Dependencias usadas y versiones
         Django     5.0.1
+        Python 3.11.3
 
     -Como ejecutar la aplicacion web en el servidor local
