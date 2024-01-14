@@ -1,13 +1,28 @@
 {% extends 'CaskApp/base.html' %} 
 
+{% block title %}
+    | Productos
+{% endblock title %}
+
 {% block contenido %}
 
-	{% for producto in productos %}
-		<ul>
-  			<li>
-				{{producto.nombre}}
-			</li>
-		</ul>
-	{% endfor %} 
+<h3>Lista de productos</h3>
 
-	{% endblock contenido %}
+    <table border='1'>
+        <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </thead>
+        <tbody>
+	        {% for producto in productos %}
+		        <tr>
+				    <td>{{producto.nombre}}</td>
+				    <td>{{producto.edad}}</td>
+		        </tr>
+	        {% endfor %} 
+        </tbody>
+    </table>
+
+<button><a href="{% url 'index' %}">Inicio</a></button>
+
+{% endblock contenido %}

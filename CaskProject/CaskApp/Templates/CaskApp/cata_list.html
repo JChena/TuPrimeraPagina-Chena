@@ -1,13 +1,26 @@
 {% extends 'CaskApp/base.html' %} 
 
+{% block title %}
+    | Catas
+{% endblock title %}
+
 {% block contenido %}
 
-	{% for cata in catas %}
-		<ul>
-  			<li>
-				{{cata.nombre}}
-			</li>
-		</ul>
-	{% endfor %} 
+<h3>Lista de catas</h3>
 
-	{% endblock contenido %}
+    <table border='1'>
+        <thead>
+            <th>Nombre</th>
+        </thead>
+        <tbody>
+	        {% for cata in catas %}
+		        <tr>
+				    <td>{{cata.nombre}}</td>
+		        </tr>
+	        {% endfor %} 
+        </tbody>
+    </table>
+
+<button><a href="{% url 'index' %}">Inicio</a></button>
+
+{% endblock contenido %}

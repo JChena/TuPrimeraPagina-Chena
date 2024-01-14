@@ -1,14 +1,28 @@
 {% extends 'CaskApp/base.html' %} 
 
+{% block title %}
+    | Clientes
+{% endblock title %}
+
 {% block contenido %}
 
-	{% for cliente in clientes %}
-		<ul>
-  			<li>
-				{{cliente.nombre}}
-				{{cliente.apellido}}
-			</li>
-		</ul>
-	{% endfor %} 
+<h3>Lista de clientes</h3>
 
-	{% endblock contenido %}
+    <table border='1'>
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </thead>
+        <tbody>
+	        {% for cliente in clientes %}
+		        <tr>
+				    <td>{{cliente.nombre}}</td>
+				    <td>{{cliente.apellido}}</td>
+		        </tr>
+	        {% endfor %} 
+        </tbody>
+    </table>
+
+<button><a href="{% url 'index' %}">Inicio</a></button>
+
+{% endblock contenido %}
